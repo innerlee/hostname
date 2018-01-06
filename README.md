@@ -10,9 +10,11 @@ Other than the hostname, some os info also shown at tooltip.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.2
 
-### 1.0.0
+Add icon.
+
+### 0.0.1
 
 Initial release.
 
