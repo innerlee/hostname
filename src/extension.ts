@@ -1,11 +1,10 @@
-'use strict'
 // The module 'vscode' contains the VS Code extensibility API
 // Import the necessary extensibility types to use in your code below
 import { window, commands, Disposable, ExtensionContext, StatusBarAlignment, StatusBarItem } from 'vscode'
 import { hostname, type, platform, arch, release } from 'os'
 const osName = require("os-name")
 const getos = require('getos')
-const promisify = require("promisify-node");
+const promisify = require("promisify-node")
 
 // This method is called when your extension is activated. Activation is
 // controlled by the activation events defined in package.json.
@@ -51,11 +50,10 @@ class Hostname {
         if (platform() == 'linux') {
             const osAsync = promisify(getos)
             let osLinux = await osAsync().then((os) => {
-                console.log("Your OS is:" + JSON.stringify(os))
                 return os
             }).catch((error) => {
                 console.log(error)
-                });
+            })
             tooltip.push(`dist: ${osLinux.dist}`,
                 `codename: ${osLinux.codename}`,
                 `release: ${osLinux.release}`,
