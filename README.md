@@ -1,9 +1,6 @@
-# hostname README
+# hostname
 
 Shows the hostname at status bar.
-
-## Features
-
 Other than the hostname, some os info also shown at tooltip.
 
 ![Hostname `lab-112` shown](images/hostname.png)
