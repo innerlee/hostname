@@ -35,7 +35,7 @@ class Hostname {
 
         // Create as needed
         if (!this._statusBarItem) {
-            this._statusBarItem = window.createStatusBarItem(StatusBarAlignment.Left)
+            this._statusBarItem = window.createStatusBarItem(StatusBarAlignment.Left, 2)
         }
 
         let tooltip = [
